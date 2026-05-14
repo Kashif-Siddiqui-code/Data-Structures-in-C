@@ -56,4 +56,11 @@ int main() {
     }
     // Print adjacency list
     for(int i = 0; i < n; i++) {
+        printf("%d", i + 1);
+        for(int j = 0; j < size[i]; j++) {
+            printf(" -> (%d, %d)", adj[i][j] + 1, weight[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
 }

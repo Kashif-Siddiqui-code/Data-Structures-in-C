@@ -33,6 +33,13 @@ void insert_at_end(struct node **head, int data){
 
 // Insert at Specific Position
 void insert_at_pos(struct node **head, int data, int pos){
+    
+    // position always greater than zero
+    if(pos<=0){
+        printf("Positin must be greater than zero");
+        return;
+    }
+            
     // create new node
     struct node *temp = (struct node*) malloc(sizeof(struct node));
     // store data
